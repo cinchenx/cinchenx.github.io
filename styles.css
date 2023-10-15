@@ -1,0 +1,310 @@
+:root {
+    --color1: #2C2B2B;
+    --color2: #F8F8F8;
+    --color3: #f7ef99;
+    --color4: #F1BB87;
+    --color5: #BAE79D;
+    --color6: #FFD5C2;
+  /*  inherited colors  */
+    --text: var(--color1);
+  }
+  *, *:before, *:after {
+    box-sizing: border-box; 
+    padding:0;
+    margin:0;
+  }
+
+/* set default font style here */
+html, body {
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+  }
+
+/* remove underline in links */
+
+a{
+  text-decoration: none;
+}
+
+/* Add Heading styles here  */
+h1 {
+    font-family: 'Lora', serif;
+    text-align: center;   
+    padding: 1rem; 
+}
+
+/* h2 is both a class and test, to shift h2 to align left, just tag h2 in media query later */
+h2{
+  font-family:'Montserrat', sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+h3{
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+/* home page */
+
+/*nav style*/
+#nav-container{
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+  
+
+}
+#nav-container a{
+  color:var(--color1);
+  padding:1em;
+  height: 15vh;
+  font-size: 12px;
+  
+}
+
+/* hero section styles */
+
+#hero-container{
+    width: 100%;
+    height: 75vh; 
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: var(--color2);  */
+    background-color: var(--color2)
+    
+  }
+#hero-container p{
+  text-align: center;
+  padding: 1rem;
+  
+}
+
+/* portfolio section styles */
+
+#card-container{
+  
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+/* generic card style and size */
+
+.cards{
+  height: 18rem;  
+  width: 18rem; 
+  margin: 1rem;
+  padding: 1rem;
+  
+}
+
+article.cards:last-of-type{
+  margin-bottom: 0;
+  
+}
+
+
+/* each card tile styles */
+#card1{
+  background-color: var(--color4);
+} 
+
+
+#card2{
+  background-color: var(--color5);
+} 
+
+#card3{
+  background-color: var(--color6)
+} 
+
+/* code icon resize */
+.codeicon{
+  width: 55px;
+  padding:1%;
+  margin:1%;
+ 
+}
+
+/* contact form styling */
+
+#contact-container{
+  
+  min-height: 12rem;
+  width: 100%;
+
+
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+  
+}
+
+input{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  width: 50%;
+  min-height: 2em;
+  padding:2px;
+  
+  
+  background: transparent;
+  outline: none;
+  
+  
+  border: solid 1px var(--color1);
+  border-bottom: none;
+
+}
+
+textarea{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  width: 50%;
+  
+  max-height: 110px;
+  padding: 2px;
+  background: transparent;
+  outline: none;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  color: var(--color1);
+  width:50%;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+}
+
+
+/* about page */
+
+
+#about-container{
+  
+  font-family: 'lora', sans-serif;
+  font-size: 1em;
+  margin: 5%;
+  
+}
+
+#profilepic-container{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color2);
+}
+
+#profilepic{
+  width:8em;
+  height: 8em;
+  margin:1em;
+  
+}
+
+
+/* footer */
+footer{
+  padding: 1.2rem;
+}
+
+
+/* media query tablet */
+
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1200px) {
+    
+    
+    #nav-container a{
+
+      font-size:medium;
+    }
+
+    .cards-test{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #hero-container{
+      height:90vh;
+    }
+
+
+}
+
+
+
+/* media query for desktop  */
+
+@media screen 
+  and (min-device-width: 1200px) {
+    #nav-container a{
+
+      font-size:large;
+    }
+
+    .cards-test{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #hero-container{
+      height:85vh;
+    }
+    #about-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 25rem;
+    }
+
+    #about-container p{
+      text-align: left;
+      font-size: large;
+      margin: 2%;
+    }
+
+    #profilepic-container{
+      margin: 2em;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+

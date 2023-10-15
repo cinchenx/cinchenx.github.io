@@ -1,1 +1,118 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- fonts used are montserrat and lora  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div class="colors">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+        <div class="color-6"></div>
+    </div>
+</head>
+<body>
+    <header>
+        <!-- contains the nav bar with portfolio bio and contact links -->
+        <nav id="nav-container">
+            <a href="#card-container">portfolio</a>
+            <a href="about.html">about</a>
+            <a href="#contact-container">contact</a>
+        </nav>
+    </header>
+
+    <!-- hero section of site, contains logo image and h1, .hero -->
+    <main>
+    <section id="hero-container">
+        <!-- logo and h1 (short bio)  -->
+        
+        <h1>cindy chen | portfolio | perth, australia </h1>
+        <p>Cindy is a tech enthusiast specialising in Front-End development based in Perth, Australia</p>
+        
+        
+    </section> 
+
+    <!-- portfolio section, h2 - portfolio heading  for portfolio tile -->
+    <section id="card-container">
+        <!-- h2 portfolio heading, align left on desktop, centered on mobile-->
+    
+        <h2 class="portfolio-heading">portfolio</h2>
+    
+   
+    <!-- 3 article tiles of portfolio work containing images and text -->
+        <div class="cards-test">
+        <article class="cards" id="card1">
+            <h3>portfolio site</h3>
+            <p>built portfolio site using HTML and css</p>
+            <img src="images/html-icon.png" class="codeicon" />
+            <img src="images/css-icon.png" class="codeicon" />
+        </article>
+
+        <article class="cards" id="card2">
+            <h3>python</h3> 
+            <p>python project</p>
+            <img src="images/html-icon.png" class="codeicon" />
+        </article>
+
+        <article class="cards" id="card3">
+            <h3>react</h3> 
+            <p>react project</p>
+            <img src="images/react-icon.png" class="codeicon" />
+        </article>
+        </div>
+        
+
+
+    </section> 
+
+    <!-- contact form section -->
+
+    <section id="contact-container">
+        <h2>contact</h2>
+        <form id="contact"
+            action="https://formspree.io/f/xjvqjele"
+            method="POST"
+            >
+            
+           
+            <input id="name" name="name" type="text" placeholder="name">
+
+            <input id="email" name="email" type="text" placeholder="your email">
+
+
+            <textarea id="message" name="message" type="text" placeholder="your message"></textarea>
+
+            <button type="submit">submit</button>
+             
+
+
+
+            <!-- <label for ="yourname" class="contact-label">your name:</label> -->
+            <!-- <input type="text" id="yourname" placeholder="your name"> 
+
+
+            <label for="youremail" class="contact-label">your email:</label>
+        
+            <input type="email" id="youremail">
+            
+            <label for="yourmessage" class="contact-label" id="yourmessage">your message:</label>
+                
+            <textarea name="message"></textarea>
+            
+            <!-- your other form fields go here 
+            <button type="submit">Send</button> -->
+        </form>
+
+    </section>
+    </main>
+</body>
+
+<!-- footer -->
+<footer>cindy chen 2023</footer>
